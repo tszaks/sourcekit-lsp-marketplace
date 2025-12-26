@@ -1,0 +1,29 @@
+{
+  "name": "sourcekit-lsp-marketplace",
+  "owner": {
+    "name": "Tyler Szakacs",
+    "email": "tyler@szakacsmedia.com"
+  },
+  "plugins": [
+    {
+      "name": "sourcekit-lsp",
+      "version": "0.1.0",
+      "source": "./sourcekit-lsp",
+      "description": "Swift and Objective-C language server via Apple SourceKit-LSP",
+      "category": "development",
+      "tags": [
+        "swift",
+        "objective-c",
+        "ios",
+        "macos",
+        "lsp",
+        "language-server",
+        "xcode"
+      ],
+      "author": {
+        "name": "Tyler Szakacs",
+        "email": "tyler@szakacsmedia.com"
+      }
+    }
+  ]
+}

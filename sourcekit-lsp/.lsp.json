@@ -1,0 +1,16 @@
+{
+  "swift": {
+    "command": "sourcekit-lsp",
+    "args": [],
+    "extensionToLanguage": {
+      ".swift": "swift",
+      ".m": "objective-c",
+      ".mm": "objective-cpp",
+      ".h": "c"
+    },
+    "transport": "stdio",
+    "initializationOptions": {},
+    "settings": {},
+    "maxRestarts": 3
+  }
+}

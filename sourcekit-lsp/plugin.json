@@ -1,0 +1,12 @@
+{
+  "name": "sourcekit-lsp",
+  "version": "0.1.0",
+  "description": "Swift and Objective-C language server via Apple SourceKit-LSP",
+  "author": {
+    "name": "Tyler Szakacs",
+    "email": "tyler@szakacsmedia.com"
+  },
+  "repository": "https://github.com/swiftlang/sourcekit-lsp",
+  "license": "Apache-2.0",
+  "keywords": ["swift", "objective-c", "ios", "macos", "lsp", "language-server", "xcode"]
+}
