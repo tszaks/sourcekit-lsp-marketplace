@@ -38,3 +38,34 @@ Once installed, Claude Code will automatically use SourceKit-LSP when working wi
 ## Author
 
 Tyler Szakacs - [Szakacs Media Company](https://szakacsmedia.com)
+
+## Quickstart TL;DR
+
+1. Open Claude Code
+2. Run `/plugin`
+3. Add marketplace: `tszaks/sourcekit-lsp-marketplace`
+4. Install `sourcekit-lsp` plugin from Discover
+
+## How It Works (TL;DR)
+
+- Plugin connects Claude Code to Apple's SourceKit-LSP on macOS
+- Swift/Objective-C language intelligence is routed through SourceKit-LSP
+- Claude tooling gets stronger symbol navigation and diagnostics support
+
+## LLM Quick Copy
+
+Use the copy button on this code block in GitHub.
+
+```txt
+Repo: sourcekit-lsp-marketplace
+Goal: Add Swift/Obj-C SourceKit-LSP support to Claude Code.
+Setup:
+1) Ensure macOS with Xcode installed
+2) In Claude Code run /plugin
+3) Add marketplace tszaks/sourcekit-lsp-marketplace
+4) Install sourcekit-lsp plugin
+Use:
+- Work in .swift/.m/.mm/.h files with improved definitions/references/diagnostics
+How it works:
+- Claude plugin -> SourceKit-LSP bridge -> language intelligence from Xcode toolchain
+```
