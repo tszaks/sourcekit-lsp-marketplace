@@ -1,0 +1,43 @@
+name: Bug report
+description: The plugin does not work as it should
+labels: ["bug"]
+body:
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened
+      description: What did you do, what did you expect, and what happened instead?
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. /plugin > add tszaks/sourcekit-lsp-marketplace
+        2. ...
+    validations:
+      required: true
+  - type: input
+    id: macos
+    attributes:
+      label: macOS and Xcode version
+      placeholder: "macOS 26.5, Xcode 26.1"
+    validations:
+      required: true
+  - type: input
+    id: claude
+    attributes:
+      label: Claude Code version
+      description: Output of `claude --version`
+      placeholder: "2.1.287"
+    validations:
+      required: true
+  - type: input
+    id: sourcekit
+    attributes:
+      label: Output of `which sourcekit-lsp`
+  - type: textarea
+    id: extra
+    attributes:
+      label: Anything else

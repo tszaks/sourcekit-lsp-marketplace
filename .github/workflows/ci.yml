@@ -1,0 +1,22 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  validate-json:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check JSON files parse
+        run: jq empty .claude-plugin/marketplace.json sourcekit-lsp/plugin.json sourcekit-lsp/.lsp.json
+      - name: Check plugin versions match
+        run: |
+          a=$(jq -r '.plugins[0].version' .claude-plugin/marketplace.json)
+          b=$(jq -r '.version' sourcekit-lsp/plugin.json)
+          test "$a" = "$b"
